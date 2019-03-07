@@ -2,7 +2,15 @@
   "name": "passport-openidconnect",
   "version": "1.0.0",
   "description": "Avalara fork of OpenID Connect authentication strategy for Passport.",
-  "keywords": ["passport", "openid", "openidconnect", "auth", "authn", "authentication", "identity"],
+  "keywords": [
+    "passport",
+    "openid",
+    "openidconnect",
+    "auth",
+    "authn",
+    "authentication",
+    "identity"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/jaredhanson/passport-openidconnect.git"
@@ -15,15 +23,17 @@
     "email": "jaredhanson@gmail.com",
     "url": "http://www.jaredhanson.net/"
   },
-  "licenses": [ {
-    "type": "MIT",
-    "url": "http://www.opensource.org/licenses/MIT"
-  } ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
   "main": "./lib",
   "dependencies": {
-    "pkginfo": "0.2.x",
+    "oauth": "^0.9.15",
     "passport": "~0.1.1",
-    "oauth": "0.9.x"
+    "pkginfo": "^0.4.1"
   },
   "devDependencies": {
     "vows": "0.6.x"
@@ -31,5 +41,7 @@
   "scripts": {
     "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
   },
-  "engines": { "node": ">= 0.6.0" }
+  "engines": {
+    "node": ">= 0.6.0"
+  }
 }
